@@ -48,8 +48,7 @@ class FacemasksPage extends Component {
                     <Table  size="small" aria-label="a dense table">
                         <TableHead>
                         <TableRow>
-                            <TableCell>Dessert (100g serving)</TableCell>
-                            <TableCell align="right">name</TableCell>
+                            <TableCell>Name</TableCell>
                             <TableCell align="right">manufacturer</TableCell>
                             <TableCell align="right">type</TableCell>
                             <TableCell align="right">price</TableCell>
@@ -63,7 +62,6 @@ class FacemasksPage extends Component {
                             <TableCell component="th" scope="row">
                                 {row.name}
                             </TableCell>
-                            <TableCell align="right">{row.name}</TableCell>
                             <TableCell align="right">{row.manufacturer}</TableCell>
                             <TableCell align="right">{row.type}</TableCell>
                             <TableCell align="right">{row.price}</TableCell>
