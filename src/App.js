@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <Nav/>
+      <Route exact path="/reaktor-assignment/" component={GlovesPage} />
       <Route exact path="/reaktor-assignment/gloves" component={GlovesPage} />
       <Route exact path="/reaktor-assignment/facemasks" component={FacemasksPage} />
       <Route exact path="/reaktor-assignment/beanies" component={BeaniesPage} />
