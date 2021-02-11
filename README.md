@@ -1,3 +1,20 @@
+# Reaktor Pre Assignment Front-End Code
+
+Task Description: https://www.reaktor.com/junior-dev-assignment/
+
+This repository is 1 part of the 2 part solution that I came up with. Front end client (this code) is deployed on github pages (https://aralacikalin.github.io/reaktor-assignment/) 
+This part consists of a react client which is connected to a express.js back end server which is located on heroku (https://calm-temple-69565.herokuapp.com/) 
+
+
+When this front end client is visited because of start up time of heroku servers there may be no data shown. In this case please wait a bit then refresh the page for best experience. If stock column is not showing please refresh the page in order to get the stock status.
+Back end server code is on another repository (https://github.com/aralacikalin/reaktor-assignment-api)
+I used material UI for the front end.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
