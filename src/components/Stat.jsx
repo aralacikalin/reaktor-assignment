@@ -12,7 +12,7 @@ class Stat extends Component {
     }
 
     componentDidMount(){
-        fetch(`http://localhost:4000/ava/${this.props.id}`).then(res=>res.json()).then(data=>{this.setState({status:data.status}) })
+        fetch(`https://calm-temple-69565.herokuapp.com/ava/${this.props.id}`).then(res=>res.json()).then(data=>{this.setState({status:data.status}) })
 
     }
 

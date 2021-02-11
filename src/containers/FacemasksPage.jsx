@@ -27,7 +27,7 @@ class FacemasksPage extends Component {
     }
 
     componentDidMount(){
-        fetch("http://localhost:4000/facemasks").then(res=>res.json()).then(data=>{this.setState({gloves:data},()=>{console.log(this.state.gloves)})})
+        fetch("https://calm-temple-69565.herokuapp.com/facemasks").then(res=>res.json()).then(data=>{this.setState({gloves:data},()=>{console.log(this.state.gloves)})})
     }
 
     handleChangePage = (event, newPage) => {

@@ -27,7 +27,7 @@ class GlovesPage extends Component {
     }
 
     componentDidMount(){
-        fetch("http://localhost:4000/gloves").then(res=>res.json()).then(data=>{this.setState({gloves:data},()=>{console.log(this.state.gloves)})})
+        fetch("https://calm-temple-69565.herokuapp.com/gloves").then(res=>res.json()).then(data=>{this.setState({gloves:data},()=>{console.log(this.state.gloves)})})
     }
 
     handleChangePage = (event, newPage) => {
