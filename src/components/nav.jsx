@@ -5,6 +5,9 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Button } from '@material-ui/core';
+import GlovesPage from '../containers/GlovesPage';
+import BeaniesPage from '../containers/BeaniesPage';
+import FacemasksPage from '../containers/FacemasksPage';
 
 class Nav extends Component {
 
@@ -18,20 +21,6 @@ class Nav extends Component {
         this.handleRedirect=this.handleRedirect.bind(this);
     }
 
-    async componentDidMount(){
-        if(window.location.pathname==="/reaktor-assignment/gloves"){
-            this.setState({value:0})
-        }
-        else if(window.location.pathname==="/reaktor-assignment/beanies"){
-            this.setState({value:1})
-        }
-        else if(window.location.pathname==="/reaktor-assignment/facemasks"){
-            this.setState({value:2})
-        }
-
-
-    }
-
 
     handleChange(event,newValue){
         this.setState({value:newValue})
@@ -40,16 +29,16 @@ class Nav extends Component {
 
     handleRedirect(){
         if(this.state.value===0){
-            return(<Redirect to="/reaktor-assignment/gloves"/>)
+            return(<GlovesPage/>)
         }
         else if(this.state.value===1){
-            return(<Redirect to="/reaktor-assignment/beanies"/>)
+            return(<BeaniesPage/>)
         }
         else if(this.state.value===2){
-            return(<Redirect to="/reaktor-assignment/facemasks"/>)
+            return(<FacemasksPage/>)
         }
         else{
-            return(null)
+            return(<GlovesPage/>)
         }
     }
 
