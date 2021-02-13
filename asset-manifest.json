@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/reaktor-assignment/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/reaktor-assignment/static/js/main.1ea33047.chunk.js",
-    "main.js.map": "/reaktor-assignment/static/js/main.1ea33047.chunk.js.map",
+    "main.js": "/reaktor-assignment/static/js/main.d99e71fe.chunk.js",
+    "main.js.map": "/reaktor-assignment/static/js/main.d99e71fe.chunk.js.map",
     "runtime-main.js": "/reaktor-assignment/static/js/runtime-main.bca6faf9.js",
     "runtime-main.js.map": "/reaktor-assignment/static/js/runtime-main.bca6faf9.js.map",
-    "static/js/2.b1edc2ad.chunk.js": "/reaktor-assignment/static/js/2.b1edc2ad.chunk.js",
-    "static/js/2.b1edc2ad.chunk.js.map": "/reaktor-assignment/static/js/2.b1edc2ad.chunk.js.map",
+    "static/js/2.12c7e499.chunk.js": "/reaktor-assignment/static/js/2.12c7e499.chunk.js",
+    "static/js/2.12c7e499.chunk.js.map": "/reaktor-assignment/static/js/2.12c7e499.chunk.js.map",
     "static/js/3.03aba91d.chunk.js": "/reaktor-assignment/static/js/3.03aba91d.chunk.js",
     "static/js/3.03aba91d.chunk.js.map": "/reaktor-assignment/static/js/3.03aba91d.chunk.js.map",
     "index.html": "/reaktor-assignment/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/reaktor-assignment/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.b1edc2ad.chunk.js.LICENSE.txt": "/reaktor-assignment/static/js/2.b1edc2ad.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/reaktor-assignment/static/media/logo.6ce24c58.svg"
+    "static/js/2.12c7e499.chunk.js.LICENSE.txt": "/reaktor-assignment/static/js/2.12c7e499.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bca6faf9.js",
-    "static/js/2.b1edc2ad.chunk.js",
+    "static/js/2.12c7e499.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.1ea33047.chunk.js"
+    "static/js/main.d99e71fe.chunk.js"
   ]
 }
