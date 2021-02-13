@@ -13,21 +13,15 @@ import { TablePagination } from '@material-ui/core';
 import Stat from "../components/Stat"
 
 
-class BeaniesPage extends Component {
+class ItemList extends Component {
     ismounted=false
     constructor(props){
         super(props)
-
         this.state={
-            gloves:[],
             page:0,
             rowsPerPage:15
 
         }
-    }
-
-    componentDidMount(){
-        fetch("https://calm-temple-69565.herokuapp.com/beanies").then(res=>res.json()).then(data=>{this.setState({gloves:data},()=>{console.log(this.state.gloves)})})
     }
 
     handleChangePage = (event, newPage) => {
@@ -57,7 +51,7 @@ class BeaniesPage extends Component {
                         </TableRow>
                         </TableHead>
                         <TableBody>
-                        {this.state.gloves.slice(this.state.page * this.state.rowsPerPage, this.state.page * this.state.rowsPerPage + this.state.rowsPerPage) .map((row) => (
+                        {this.props.data.slice(this.state.page * this.state.rowsPerPage, this.state.page * this.state.rowsPerPage + this.state.rowsPerPage) .map((row) => (
                             <TableRow key={row.name}>
                             <TableCell component="th" scope="row">
                                 {row.name}
@@ -75,7 +69,7 @@ class BeaniesPage extends Component {
                 <TablePagination
                     component="div"
                     rowsPerPageOptions={[10, 15, 20]}
-                    count={this.state.gloves.length}
+                    count={this.props.data.length}
                     rowsPerPage={this.state.rowsPerPage}
                     page={this.state.page}
                     onChangePage={this.handleChangePage}
@@ -87,7 +81,7 @@ class BeaniesPage extends Component {
     }
 }
 
-export default BeaniesPage;
+export default ItemList;
 
 
 

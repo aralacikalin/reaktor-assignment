@@ -5,20 +5,27 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Button } from '@material-ui/core';
-import GlovesPage from '../containers/GlovesPage';
-import BeaniesPage from '../containers/BeaniesPage';
-import FacemasksPage from '../containers/FacemasksPage';
+import ItemList from '../containers/ItemList';
 
 class Nav extends Component {
 
     constructor(props){
         super(props)
         this.state={
-            value:null,
-            username:null
+            gloves:[],
+            beanies:[],
+            facemasks:[]
         }
         this.handleChange=this.handleChange.bind(this);
         this.handleRedirect=this.handleRedirect.bind(this);
+    }
+
+    componentDidMount(){
+        fetch("https://calm-temple-69565.herokuapp.com/gloves").then(res=>res.json()).then(data=>{this.setState({gloves:data})})
+        fetch("https://calm-temple-69565.herokuapp.com/beanies").then(res=>res.json()).then(data=>{this.setState({beanies:data})})
+        fetch("https://calm-temple-69565.herokuapp.com/facemasks").then(res=>res.json()).then(data=>{this.setState({facemasks:data})})
+
+
     }
 
 
@@ -29,16 +36,16 @@ class Nav extends Component {
 
     handleRedirect(){
         if(this.state.value===0){
-            return(<GlovesPage/>)
+            return(<ItemList data={this.state.gloves}/>)
         }
         else if(this.state.value===1){
-            return(<BeaniesPage/>)
+            return(<ItemList data={this.state.beanies}/>)
         }
         else if(this.state.value===2){
-            return(<FacemasksPage/>)
+            return(<ItemList data={this.state.facemasks}/>)
         }
         else{
-            return(<GlovesPage/>)
+            return(<ItemList data={this.state.gloves}/>)
         }
     }
 
