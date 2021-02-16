@@ -6,10 +6,13 @@ This repository is 1 part of the 2 part solution that I came up with. Front end 
 This part consists of a react client which is connected to a express.js back end server which is located on heroku (https://calm-temple-69565.herokuapp.com/) 
 
 
-When this front end client is visited because of start up time of heroku servers there may be no data shown. In this case please wait a bit then refresh the page for best experience. If stock column is not showing please refresh the page in order to get the stock status.
+When this front end client is visited because of start up time of heroku servers there may be no data shown. In this case please wait a bit and if there is no data shown after waiting then refresh the page. Stock column may take a bit longer to load after the first load because of the request time for the availability but after the first load it should be quick to load.
 Back end server code is on another repository (https://github.com/aralacikalin/reaktor-assignment-api)
+
+Used node version 14.15.4
 I used material UI for the front end.
 
+Instructions for running React App is below.
 
 
 
